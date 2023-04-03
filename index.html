@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma boutique d'habits</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">Ma boutique d'habits</a>
-        <ul id="nav-mobile" class="left">
-          <li><a href="#modal-add-article" class="modal-trigger"><i class="material-icons">add</i></a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+	<title>Ma compagnie de taxi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Ma compagnie de taxi</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Accueil</a></li>
+				<li><a href="#">Réservation</a></li>
+				<li><a href="#">Tarifs</a></li>
+				<li><a href="#">À propos</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="reservation">
+			<h2>Réservez votre taxi maintenant</h2>
+			<form>
+				<label for="nom">Nom :</label>
+				<input type="text" id="nom" name="nom" required>
 
-    <div class="container">
-      <div class="row" id="articles-container"></div>
-    </div>
+				<label for="adresse">Adresse :</label>
+				<input type="text" id="adresse" name="adresse" required>
 
-    <div id="modal-add-article" class="modal">
-      <div class="modal-content">
-        <h4>Ajouter un article</h4>
-        <div class="row">
-          <form class="col s12">
-            <div class="input-field">
-              <input id="article-name" type="text" class="validate">
-              <label for="article-name">Nom de l'article</label>
-            </div>
-            <div class="input-field">
-              <input id="article-price" type="number" class="validate">
-              <label for="article-price">Prix de l'article</label>
-            </div>
-            <div class="input-field">
-              <input id="article-image" type="text" class="validate">
-              <label for="article-image">URL de l'image de l'article</label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Annuler</a>
-          <a href="#!" class="waves-effect waves-green btn-flat" id="submit-article">Ajouter</a>
-        </div>
-      </div>
-    </div>
+				<label for="destination">Destination :</label>
+				<input type="text" id="destination" name="destination" required>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+				<label for="date">Date :</label>
+				<input type="date" id="date" name="date" required>
+
+				<label for="heure">Heure :</label>
+				<input type="time" id="heure" name="heure" required>
+
+				<button type="submit">Réserver</button>
+			</form>
+		</section>
+		<section id="tarifs">
+			<h2>Tarifs</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Ville</th>
+						<th>Tarif</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Paris</td>
+						<td>50€</td>
+					</tr>
+					<tr>
+						<td>Lyon</td>
+						<td>100€</td>
+					</tr>
+					<tr>
+						<td>Marseille</td>
+						<td>150€</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="apropos">
+			<h2>À propos de nous</h2>
+			<p>Nous sommes une entreprise de taxi fiable et abordable, offrant des services de transport de qualité supérieure à nos clients.</p>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Ma compagnie de taxi. Tous droits réservés.</p>
+	</footer>
+</body>
 </html>
