@@ -1,0 +1,33 @@
+body {
+  background-color: #f1f1f1;
+}
+
+nav {
+  background-color: #008080;
+}
+
+nav .brand-logo {
+  font-size: 2rem;
+}
+
+#articles-container {
+  margin-top: 40px;
+}
+
+.article-card {
+  padding: 10px;
+}
+
+.article-card img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .article-card {
+    padding: 20px;
+  }
+
+  .article-card img {
+    max-height: 300px;
+  }
+}

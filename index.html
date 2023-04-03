@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma boutique d'habits</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Ma boutique d'habits</a>
+        <ul id="nav-mobile" class="left">
+          <li><a href="#modal-add-article" class="modal-trigger"><i class="material-icons">add</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row" id="articles-container"></div>
+    </div>
+
+    <div id="modal-add-article" class="modal">
+      <div class="modal-content">
+        <h4>Ajouter un article</h4>
+        <div class="row">
+          <form class="col s12">
+            <div class="input-field">
+              <input id="article-name" type="text" class="validate">
+              <label for="article-name">Nom de l'article</label>
+            </div>
+            <div class="input-field">
+              <input id="article-price" type="number" class="validate">
+              <label for="article-price">Prix de l'article</label>
+            </div>
+            <div class="input-field">
+              <input id="article-image" type="text" class="validate">
+              <label for="article-image">URL de l'image de l'article</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Annuler</a>
+          <a href="#!" class="waves-effect waves-green btn-flat" id="submit-article">Ajouter</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
